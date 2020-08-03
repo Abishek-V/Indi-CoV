@@ -166,26 +166,6 @@ timeline<-data.frame(tail(daily_data[,2:5],n=4))
 
 
 
-#library(sp)
-#library(ggmap)
-#library(maps)
-#library(rgdal)
-#library(scales)
-#library(maptools)
-#library(gridExtra)
-#library(rgeos)
-#library(rgdal)
-#library(mapproj)
 
-#load(file = "states_shape.rda")
-#load(file = "fortify_shape.rda")
-
-#Merged_data = merge(fortify_shape, State_data, by="id", all.x=TRUE)
-#Map_plot = Merged_data[order(Merged_data$order), ]
-#p<-ggplot(data = Map_plot,aes(x = long, y = lat,label=State) )+
-#geom_polygon(aes(fill = Confirmed,group=group),color = "black",size=0.5 ) + xlab("") + ylab("")+  labs(title = "Confirmed Cases In India")+
-#scale_fill_gradient2(low ="orange",mid= muted("red") ,
-#                   high = "red",midpoint =max(State_data$Confirmed)/2)+coord_map() 
-#fig <- ggplotly(p,tooltip = c("State","Confirmed"))
 
 
